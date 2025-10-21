@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Mountain Called Monkey</title>
+  <meta name="description" content="The Mountain Called Monkey — a standalone VR horror-exploration game from the owners of Monke Monke. Start in a cabin, descend into elevators and dark corridors, earn XP, unlock areas, and survive." />
+  <style>
+    :root{
+      --bg:#0f1720; --card:#0b1220; --accent:#eab308; --muted:#9aa7b2; --text:#e6eef6;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#081019 0%, #0b1622 100%);color:var(--text);}
+    .container{max-width:980px;margin:32px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.6);}
+    header{display:flex;gap:18px;align-items:center;}
+    .logo{width:84px;height:84px;border-radius:10px;background:linear-gradient(135deg,#222 0%,#000 100%);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:28px}
+    h1{margin:0;font-size:24px}
+    .byline{color:var(--muted);margin-top:6px;font-size:14px}
+    .grid{display:grid;grid-template-columns:1fr 330px;gap:20px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:10px}
+    .big-cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#071422;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+    .features{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+    .feature{display:flex;gap:10px;align-items:flex-start}
+    .muted{color:var(--muted);font-size:14px}
+    .policy{margin-top:18px;line-height:1.5;font-size:14px;color:var(--muted)}
+    details{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;color:var(--muted)}
+    footer{margin-top:26px;border-top:1px dashed rgba(255,255,255,0.03);padding-top:16px;color:var(--muted);font-size:13px}
+    .tagline{color:var(--accent);font-weight:700}
+    @media (max-width:880px){ .grid{grid-template-columns:1fr; } .logo{width:64px;height:64px;font-size:20px}}
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <div class="logo">M</div>
+      <div>
+        <h1>The Mountain Called Monkey</h1>
+        <div class="byline">From the Owners of <strong>Monke Monke</strong> — A standalone VR horror-exploration experience</div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <!-- Left / main column -->
+      <div>
+        <div class="card">
+          <h2 style="margin-top:0">Game Overview</h2>
+          <p class="muted">
+            Enter <strong>The Mountain Called Monkey</strong>, a brand-new VR game focused on atmospheric exploration, tense encounters, and progression.
+            You begin inside a quiet mountain cabin, discover a hidden hole, and descend into a area elevators to travel with.
+            Explore, earn XP, unlock new mountains, and uncover the dark secrets that lie beneath the mountain.
+          </p>
+
+          <div style="margin-top:14px" class="big-cta">
+            <a class="btn" href="#" id="downloadBtn" onclick="alert('meta.com/en-gb/experiences/the-mountain-called-monkey/6633426673391423/');return false">Download</a>
+            <a class="btn secondary" href="#privacy">Privacy Policy</a>
+            <a class="btn secondary" href="#" onclick="alert('Join our Discord: discord.gg/7B2H7ezxxN');return false">Join the Community</a>
+          </div>
+
+          <details style="margin-top:14px">
+            <summary style="cursor:pointer;font-weight:700;color:var(--text)">Steam / Store Short Description</summary>
+            <p class="muted" style="margin-top:8px">
+              The Mountain Called Monkey is a standalone VR horror-exploration game. Begin in a remote cabin, earn XP, and unlock deeper secrets. From the owners of Monke Monke.
+            </p>
+          </details>
+
+        </div>
+
+        <div class="card" id="privacy" style="margin-top:18px">
+          <h2 style="margin-top:0">Privacy Policy</h2>
+          <p class="muted policy"><strong>Last updated:</strong> October 21, 2025</p>
+
+          <p class="muted policy">This Privacy Policy explains how <strong>The Mountain Called Monkey</strong> ("we", "us", "our") collects, uses, and shares information when you play the game, visit our website, or interact with related services. By downloading or using our game you agree to the terms described here. If you do not agree, please do not use the game.</p>
+
+          <details>
+            <summary><strong>1. Information we collect</strong></summary>
+            <div style="margin-top:8px" class="muted policy">
+              <ul>
+                <li><strong>Gameplay data:</strong> Non-identifying gameplay events (levels completed, XP earned, progress) used to improve game balance and progression systems.</li>
+                <li><strong>Crash reports & diagnostics:</strong> When the game crashes or encounters an error, we may collect logs and system details to debug and fix issues.</li>
+                <li><strong>Device & technical data:</strong> Device model, operating system version, hardware identifiers (non-personal), and performance metrics to optimize the game.</li>
+                <li><strong>Account data (optional):</strong> If you create an account or sign in, we may store your username, display name, and linked social IDs. Do not provide sensitive personal information.</li>
+                <li><strong>Communications:</strong> If you contact support, we keep your message and any details you provide to resolve your inquiry.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details style="margin-top:8px">
+            <summary><strong>2. How we use information</strong></summary>
+            <div style="margin-top:8px" class="muted policy">
+              We use data to:
+              <ul>
+                <li>Provide and maintain the game experience;</li>
+                <li>Analyze and improve gameplay, fix bugs, and optimize performance;</li>
+                <li>Deliver updates, security patches, and community features;</li>
+                <li>Prevent fraud and enforce our Terms of Service;</li>
+                <li>Respond to support requests.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details style="margin-top:8px">
+            <summary><strong>3. Analytics & third parties</strong></summary>
+            <div style="margin-top:8px" class="muted policy">
+              We may use third-party analytics providers (for example: Unity Analytics, Firebase, or other platform services) to collect and process usage statistics. These providers are contractually restricted from using your data for unrelated purposes. We do not sell personal information.
+            </div>
+          </details>
+
+          <details style="margin-top:8px">
+            <summary><strong>4. Cookies & local storage</strong></summary>
+            <div style="margin-top:8px" class="muted policy">
+              Our website may use cookies and local storage to remember preferences and provide basic site functionality. The game stores settings and save data locally on your device. If you sign in to a cloud service, your save data may be uploaded to that service according to its policy.
+            </div>
+          </details>
+
+          <details style="margin-top:8px">
+            <summary><strong>5. Data retention & deletion</strong></summary>
+            <div style="margin-top:8px" class="muted policy">
+              We keep logs and gameplay data only as long as needed to provide the service, fix problems, and comply with legal obligations. If you request deletion of your account or personal data, contact us (see "Contact" below). We will process deletion requests in accordance with applicable law.
+            </div>
+          </details>
+
+          <details style="margin-top:8px">
+            <summary><strong>6. Your rights (GDPR / CCPA summary)</strong></summary>
+            <div style="margin-top:8px" class="muted policy">
+              <ul>
+                <li><strong>Access:</strong> You can request a copy of personal data we hold about you.</li>
+                <li><strong>Correction:</strong> You may request changes to incorrect data.</li>
+                <li><strong>Deletion:</strong> You may request deletion of personal data where permitted by law.</li>
+                <li><strong>Opt-out:</strong> For California residents, you may request that we no longer sell or share personal information (we do not sell personal information as of this policy).</li>
+              </ul>
+              To exercise any rights, contact us using the contact details below. We may ask for verification to process requests.
+            </div>
+          </details>
+
+          <details style="margin-top:8px">
+            <summary><strong>7. Children</strong></summary>
+            <div style="margin-top:8px" class="muted policy">
+              The game is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child provided us with personal information, contact us to request deletion.
+            </div>
+          </details>
+
+          <details style="margin-top:8px">
+            <summary><strong>8. Security</strong></summary>
+            <div style="margin-top:8px" class="muted policy">
+              We take reasonable technical and organizational steps to protect data. However, no system is completely secure — we cannot guarantee absolute security.
+            </div>
+          </details>
+
+          <details style="margin-top:8px">
+            <summary><strong>9. Changes to this policy</strong></summary>
+            <div style="margin-top:8px" class="muted policy">
+              We may update this privacy policy. When we do, we will update the "Last updated" date and, where appropriate, notify users. Continued use after modifications constitutes acceptance of the revised policy.
+            </div>
+          </details>
+
+          <h3 style="margin-top:12px">Contact</h3>
+          <p class="muted policy">
+            For privacy questions, data requests, or support: <br>
+            <strong>Email:</strong> <a href="mailto:monkemonkedeveloper@gmail.com" style="color:var(--accent)">monkemonkedeveloper@gmail.com</a> <br>
+            <strong>Mailing address (optional):</strong> Insert studio address here.
+          </p>
+
+        </div>
+
+        <footer>
+          <div>© <span id="year">2025</span> The Mountain Called Monkey — All rights reserved.</div>
+        </footer>
+      </div>
+
+      <!-- Right / sidebar -->
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Quick Facts</h3>
+          <p class="muted"><strong>Genre:</strong> VR Horror / Exploration</p>
+          <p class="muted"><strong>Platforms:</strong> PC VR (Quest Link), Standalone VR (Quest), Others — coming soon</p>
+          <p class="muted"><strong>Players:</strong> Solo & Multiplayer</p>
+          <p class="muted"><strong>Progression:</strong> XP, unlocks, cosmetics</p>
+
+          <h4 style="margin-top:12px">Trailer</h4>
+          <div style="background:#071421;height:160px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted);">
+            <div>
+              <div style="font-weight:700">Trailer placeholder</div>
+              <div style="font-size:13px;margin-top:6px">Replace this block with an embedded video or animated GIF.</div>
+            </div>
+          </div>
+
+          <h4 style="margin-top:12px">System / Notes</h4>
+          <p class="muted">This site is informational. Replace download links with your builds or store pages. For analytics, add your preferred provider and disclose it in the policy above.</p>
+
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h4 style="margin-top:0">Press Kit</h4>
+          <p class="muted">Include screenshots, logos, and a short factsheet in a ZIP for press. Link here when ready.</p>
+          <a class="btn secondary" href="#" onclick="alert('Replace with press kit link');return false">Download Press Kit</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    if (!localStorage.getItem('mm_cookie_ack')) {
+      const n = document.createElement('div');
+      n.style.cssText = "position:fixed;right:16px;bottom:16px;background:rgba(0,0,0,0.75);padding:12px;border-radius:10px;font-size:13px;color:var(--text);z-index:9999";
+      n.innerHTML = 'We use analytics to improve the game. <a href="#privacy" style="color:var(--accent);text-decoration:underline">Read our Privacy Policy</a> &nbsp; <button style="margin-left:8px;padding:6px 10px;border-radius:8px;border:none;background:var(--accent);color:#071422;cursor:pointer" id="ack">Accept</button>';
+      document.body.appendChild(n);
+      document.getElementById('ack').onclick = function(){ localStorage.setItem('mm_cookie_ack','1'); n.remove(); }
+    }
+  </script>
+</body>
+</html>
